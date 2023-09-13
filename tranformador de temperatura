@@ -1,0 +1,49 @@
+programa {
+  caracter opcao 
+  real fator1 
+  real result 
+  logico reiniciar = verdadeiro 
+
+
+  funcao operacao(cadeia tipoOperacao){
+    limpa() 
+    escreva("Calculadora de\t", tipoOperacao, "\n")
+    escreva("\nDigite o primeiro fator:\t\n")
+    escreva("resposta:\t")
+    leia(fator1)
+    escreva("\nDigite o segundo fator:\n")
+    escreva("resposta:\t")
+  }
+
+  funcao calcular(){
+    limpa() 
+    escreva("Calculadora básica\n")
+    escreva("\nEscolha a operação:\n")
+    escreva("1 - Grau Celsius pra Fahrenheit\n")
+    escreva("2 - Grau Fahrenheit para Celsius\n")
+    escreva("\nresposta:\t")
+    leia(opcao)
+
+    se (opcao == 1) {
+      operacao("Grau Celsius pra Fahrenheit")
+      result = fator1 * 9 / 5 +32
+      escreva("\nO resultado é:\t", result, "\n")
+    }
+
+    se (opcao == 2) {
+      operacao("Grau Fahrenheit para Celsius")
+      result = (fator1 - 32) * 5 / 9
+      escreva("\nO resultado é:\t", result, "\n")
+    }
+  
+  }
+
+  funcao inicio() {
+    enquanto (reiniciar) {
+      calcular()
+      escreva("\nDeseja calcular novamente? digite 'verdadeiro' para sim e 'falso' para não:\n")
+      escreva("Resposta:\t")
+      leia(reiniciar)
+    }
+  }
+}
