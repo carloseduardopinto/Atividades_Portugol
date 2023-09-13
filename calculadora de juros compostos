@@ -1,0 +1,39 @@
+programa {
+
+  inclua biblioteca Matematica --> mat 
+  logico reiniciar = verdadeiro
+
+  funcao calcular() {
+  
+    real capital
+    real taxa
+    real tempo
+    real result 
+
+    escreva("Calculadora de Juros Compostos\n\n")
+    escreva("Qual o capital?\n")
+    escreva("resposta:\t")
+    leia (capital)
+    escreva("\nQual a taxa?\n") 
+    escreva("resposta:\t")  
+    leia(taxa)
+    escreva("\nQual o tempo?\n")  
+    escreva("resposta:\t")
+    leia(tempo)
+    limpa() 
+    result = capital * mat.potencia(1 + taxa, tempo)
+    escreva("Resultado:\t",result, "\n")
+  }
+
+   funcao  inicio(){
+      enquanto (reiniciar)  {
+       calcular()
+       escreva("/nDeseja calcular novamente? digite 's' para sim e 'n' para não:\n")
+       escreva("Resposta:\t")
+       leia(reiniciar)
+       
+      }
+
+    }
+ 
+}
