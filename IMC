@@ -9,11 +9,12 @@ programa {
     escreva("Qual o seu peso?")
     escreva("\nResposta:")
     leia(peso)
-   
+    limpa()
     escreva("Qual a sua altura?")
     escreva("\nResposta:")
     leia(altura)
- 
+    limpa()
+    
     result = peso/(altura*altura) 
     escreva("Resultado:\t",result, "\n")
    
