@@ -25,15 +25,14 @@ programa {
     escreva("Resultado:\t",result, "\n")
   }
 
-   funcao  inicio(){
-      enquanto (reiniciar)  {
-       calcular()
-       escreva("/nDeseja calcular novamente? digite 's' para sim e 'n' para não:\n")
-       escreva("Resposta:\t")
-       leia(reiniciar)
-       
-      }
-
+   funcao inicio() {
+    enquanto (reiniciar) {
+      calcular()
+      escreva("\nDeseja calcular novamente? digite 'verdadeiro' para sim e 'falso' para não:\n")
+      escreva("Resposta:\t")
+      leia(reiniciar)
+      limpa() 
     }
+  }
  
 }
