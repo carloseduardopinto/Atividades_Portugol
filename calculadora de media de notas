@@ -1,0 +1,37 @@
+programa {
+  logico reiniciar = verdadeiro
+
+  funcao calcular() {
+    real nota1
+    real nota2
+    real nota3
+    real nota4
+    real result
+
+
+    escreva ("Qual a Nota?\n")
+    leia (nota1)
+    escreva("Qual a Nota?\n")
+    leia (nota2)
+    escreva ("Qual a Nota?\n")
+    leia (nota3)
+    escreva ("Qual a Nota?\n")
+    leia (nota4)
+
+    result = (nota1 + nota2 + nota3+ nota4) / 4
+    escreva("Resultado\n", result)
+
+
+    funcao inicio() {
+      enquanto (reiniciar) {
+      calcular()
+      escreva("\nDeseja calcular novamente? digite 'verdadeiro' para sim e 'falso' para não:\n")
+      escreva("Resposta:\t")
+      leia(reiniciar)
+      limpa() 
+      }
+ 
+    }
+
+  }
+}
