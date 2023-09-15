@@ -1,37 +1,54 @@
 programa {
+  inclua biblioteca Util --> u
   logico reiniciar = verdadeiro
+  inteiro sorteio = u.sorteia(1, 100)
+  logico comecar
 
-  funcao calcular() {
-    real nota1
-    real nota2
-    real nota3
-    real nota4
-    real result
+  funcao jogo() {
+  inteiro numero
+  inteiro contador = 0
 
+   escreva("Jogo\tde\tAdivinhar\to\tNúmero\n\nRegras:\n")
+   escreva("\nnúmeros\ta\tserem\tusados:\t1\ta\t100")
+   escreva("\nvocê\tterá\t10\ttentativas")
+   escreva("\n\npara\tiniciar\tdigite\t1:")
+   leia(comecar)
+   limpa()
+  
+    enquanto(contador<10){
+    escreva("Digite um Número:\t\n")  
+    leia(numero)
+    
+    se(numero == sorteio){
+      limpa()
+    escreva("Acertou\n")
+    pare
+    contador ++
 
-    escreva ("Qual a Nota?\n")
-    leia (nota1)
-    escreva("Qual a Nota?\n")
-    leia (nota2)
-    escreva ("Qual a Nota?\n")
-    leia (nota3)
-    escreva ("Qual a Nota?\n")
-    leia (nota4)
-
-    result = (nota1 + nota2 + nota3+ nota4) / 4
-    escreva("Resultado\n", result)
-
-
-    funcao inicio() {
-      enquanto (reiniciar) {
-      calcular()
-      escreva("\nDeseja calcular novamente? digite 'verdadeiro' para sim e 'falso' para não:\n")
-      escreva("Resposta:\t")
-      leia(reiniciar)
-      limpa() 
-      }
- 
+    }
+   
+    se(numero > sorteio){
+    escreva("É Menor\n")
+    contador ++
+    }
+   
+    se(numero < sorteio){
+    escreva("\nÉ Maior\n\n")
+    contador ++
+    }
+      se(contador ==10)
+      escreva("Game\tOVER\n")
     }
 
+   funcao inicio() {
+      enquanto (reiniciar) {
+       jogo()
+       escreva("\nDeseja jogar novamente? digite 'verdadeiro' para sim e 'falso' para não:\n")
+       escreva("Resposta:\t")
+       leia(reiniciar)
+       limpa() 
+      
+      }
+    }
   }
 }
