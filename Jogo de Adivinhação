@@ -5,41 +5,41 @@ programa {
   logico comecar
 
   funcao jogo() {
-  inteiro numero
-  inteiro contador = 0
+   inteiro numero
+   inteiro contador = 0
 
-   escreva("Jogo\tde\tAdivinhar\to\tNúmero\n\nRegras:\n")
-   escreva("\nnúmeros\ta\tserem\tusados:\t1\ta\t100")
-   escreva("\nvocê\tterá\t10\ttentativas")
-   escreva("\n\npara\tiniciar\tdigite\t1:")
-   leia(comecar)
-   limpa()
-  
+    escreva("Jogo\tde\tAdivinhar\to\tNúmero\n\nRegras:\n")
+    escreva("\nnúmeros\ta\tserem\tusados:\t1\ta\t100")
+    escreva("\nvocê\tterá\t10\ttentativas")
+    escreva("\n\npara\tiniciar\tdigite\t1:")
+    leia(comecar)
+    limpa()
     enquanto(contador<10){
     escreva("Digite um Número:\t\n")  
     leia(numero)
     
     se(numero == sorteio){
       limpa()
-    escreva("Acertou\n")
-    pare
-    contador ++
+     escreva("Acertou\n")
+     pare
+     contador ++
 
-    }
+    } 
    
     se(numero > sorteio){
-    escreva("É Menor\n")
-    contador ++
+     escreva("É Menor\n")
+     contador ++
     }
    
     se(numero < sorteio){
-    escreva("É Maior\n")
-    contador ++
+     escreva("\nÉ Maior\n\n")
+     contador ++
     }
-      
+      se(contador ==10)
+      escreva("Game\tOVER\n")
     }
 
-   funcao inicio() {
+    funcao inicio() {
       enquanto (reiniciar) {
        jogo()
        escreva("\nDeseja jogar novamente? digite 'verdadeiro' para sim e 'falso' para não:\n")
