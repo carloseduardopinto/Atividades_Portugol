@@ -5,8 +5,8 @@ programa {
   logico comecar
 
   funcao jogo() {
-  inteiro numero
-  inteiro contador = 0
+   inteiro numero
+   inteiro contador = 0
 
     escreva("Jogo\tde\tAdivinhar\to\tNúmero\n\nRegras:\n")
     escreva("\nnúmeros\ta\tserem\tusados:\t1\ta\t100")
@@ -25,7 +25,7 @@ programa {
      pare
      contador ++
 
-    }
+    } 
    
     se(numero > sorteio){
      escreva("É Menor\n")
