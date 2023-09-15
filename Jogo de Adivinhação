@@ -8,18 +8,17 @@ programa {
   inteiro numero
   inteiro contador = 0
 
-   escreva("Jogo\tde\tAdivinhar\to\tNúmero\nRegras:\n")
-   escreva("\nnúmeros\ta\tserem\tusados\t1\ta\t100")
+   escreva("Jogo\tde\tAdivinhar\to\tNúmero\n\nRegras:\n")
+   escreva("\nnúmeros\ta\tserem\tusados:\t1\ta\t100")
    escreva("\nvocê\tterá\t10\ttentativas")
-   escreva("\n\npara\tiniciar\taperte\t1")
-   escreva("\n1 - Iniciar:")
+   escreva("\n\npara\tiniciar\tdigite\t1:")
    leia(comecar)
    limpa()
   
     enquanto(contador<10){
     escreva("Digite um Número:\t\n")  
     leia(numero)
-
+    
     se(numero == sorteio){
     escreva("Acertou\n")
     contador ++
