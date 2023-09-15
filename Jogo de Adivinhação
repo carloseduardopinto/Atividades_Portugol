@@ -20,17 +20,20 @@ programa {
     leia(numero)
     
     se(numero == sorteio){
+      limpa()
     escreva("Acertou\n")
+    pare
     contador ++
+
     }
    
     se(numero > sorteio){
-    escreva("É Menor\t")
+    escreva("É Menor\n")
     contador ++
     }
    
     se(numero < sorteio){
-    escreva("É Maior\t")
+    escreva("É Maior\n")
     contador ++
     }
       
