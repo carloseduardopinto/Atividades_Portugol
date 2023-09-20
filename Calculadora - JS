@@ -1,0 +1,71 @@
+function iniciar () {
+
+    let opcao 
+    let fator1 
+    let fator2 
+    let result
+ 
+    console.log("Calculadora\tbásica\n")
+    console.log("\nEscolha\ta\toperação:\n")
+    console.log("1\t-\tAdição\n")
+    console.log("2\t-\tSubtração\n")
+    console.log("3\t-\tMultiplicação\n")
+    console.log("4\t-\tDivisão\n")
+    console.log("\nresposta:\t")
+    opcao = prompt()
+
+
+   if (opcao == 1) {
+      console.log("\nAdição:\n")
+      console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+      console.log("resposta:\t")
+     fator1 = parseFloat(prompt())
+     console.log("\nDigite\to\tsegundo\tfator:\n")
+      console.log("resposta:\t")
+      fator2 = parseFloat(prompt())
+      result = fator1 + fator2
+     console.log("\nO\tresultado\té:\t", result, "\n")
+   
+    }
+
+
+   if (opcao == 2) {
+        console.log("\nSubtração:\n")
+        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+        console.log("resposta:\t")
+        fator1 = parseFloat(prompt())
+        console.log("\nDigite\to\tsegundo\tfator:\n")
+        console.log("resposta:\t")
+        fator2 = parseFloat(prompt())
+        result = fator1 - fator2
+        console.log("\nO\tresultado\té:\t", result, "\n")
+     
+    }
+
+    if (opcao == 3) {
+        console.log("\n Multiplicação:\n")
+        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+        console.log("resposta:\t")
+        fator1 = parseFloat(prompt())
+        console.log("\nDigite\to\tsegundo\tfator:\n")
+        console.log("resposta:\t")
+        fator2 = parseFloat(prompt())
+        result = fator1 * fator2
+        console.log("\nO\tresultado\té:\t", result, "\n")
+
+    }
+
+    if (opcao == 4) {
+        console.log("\nDivisão:\n")
+        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+        console.log("resposta:\t")
+        fator1 = parseFloat(prompt())
+        console.log("\nDigite\to\tsegundo\tfator:\t\n")
+        console.log("resposta:\t")
+        fator2 = parseFloat(prompt())
+        result = fator1 / fator2
+        console.log("\nO\tresultado\té:\t", result, "\n")
+      }
+
+
+}
