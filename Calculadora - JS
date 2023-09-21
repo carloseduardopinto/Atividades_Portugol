@@ -16,55 +16,55 @@ function iniciar () {
 
 
    if (opcao == 1) {
-       console.log("\nAdição:\n")
+      console.log("\nAdição:\n")
+      console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+      console.log("resposta:\t")
+      fator1 = parseFloat(prompt())
+      console.log("\nDigite\to\tsegundo\tfator:\n")
+      console.log("resposta:\t")
+      fator2 = parseFloat(prompt())
+      result = fator1 + fator2
+      console.log("\nO\tresultado\té:\t", result, "\n")
+   
+    }
+
+
+   if (opcao == 2) {
+      console.log("\nSubtração:\n")
+      console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+      console.log("resposta:\t")
+      fator1 = parseFloat(prompt())
+      console.log("\nDigite\to\tsegundo\tfator:\n")
+      console.log("resposta:\t")
+      fator2 = parseFloat(prompt())
+      result = fator1 - fator2
+      console.log("\nO\tresultado\té:\t", result, "\n")
+     
+    }
+
+    if (opcao == 3) {
+       console.log("\n Multiplicação:\n")
        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
        console.log("resposta:\t")
        fator1 = parseFloat(prompt())
        console.log("\nDigite\to\tsegundo\tfator:\n")
        console.log("resposta:\t")
        fator2 = parseFloat(prompt())
-       result = fator1 + fator2
+       result = fator1 * fator2
        console.log("\nO\tresultado\té:\t", result, "\n")
-   
-    }
-
-
-   if (opcao == 2) {
-        console.log("\nSubtração:\n")
-        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
-        console.log("resposta:\t")
-        fator1 = parseFloat(prompt())
-        console.log("\nDigite\to\tsegundo\tfator:\n")
-        console.log("resposta:\t")
-        fator2 = parseFloat(prompt())
-        result = fator1 - fator2
-        console.log("\nO\tresultado\té:\t", result, "\n")
-     
-    }
-
-    if (opcao == 3) {
-        console.log("\n Multiplicação:\n")
-        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
-        console.log("resposta:\t")
-        fator1 = parseFloat(prompt())
-        console.log("\nDigite\to\tsegundo\tfator:\n")
-        console.log("resposta:\t")
-        fator2 = parseFloat(prompt())
-        result = fator1 * fator2
-        console.log("\nO\tresultado\té:\t", result, "\n")
 
     }
 
     if (opcao == 4) {
-        console.log("\nDivisão:\n")
-        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
-        console.log("resposta:\t")
-        fator1 = parseFloat(prompt())
-        console.log("\nDigite\to\tsegundo\tfator:\t\n")
-        console.log("resposta:\t")
-        fator2 = parseFloat(prompt())
-        result = fator1 / fator2
-        console.log("\nO\tresultado\té:\t", result, "\n")
+       console.log("\nDivisão:\n")
+       console.log("\nDigite\to\tprimeiro\tfator:\t\n")
+       console.log("resposta:\t")
+       fator1 = parseFloat(prompt())
+       console.log("\nDigite\to\tsegundo\tfator:\t\n")
+       console.log("resposta:\t")
+       fator2 = parseFloat(prompt())
+       result = fator1 / fator2
+       console.log("\nO\tresultado\té:\t", result, "\n")
       }
 
 
