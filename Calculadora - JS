@@ -16,6 +16,7 @@ function iniciar () {
 
 
    if (opcao == 1) {
+
       console.log("\nAdição:\n")
       console.log("\nDigite\to\tprimeiro\tfator:\t\n")
       console.log("resposta:\t")
@@ -30,6 +31,7 @@ function iniciar () {
 
 
    if (opcao == 2) {
+
       console.log("\nSubtração:\n")
       console.log("\nDigite\to\tprimeiro\tfator:\t\n")
       console.log("resposta:\t")
@@ -42,7 +44,9 @@ function iniciar () {
      
     }
 
+
     if (opcao == 3) {
+
        console.log("\n Multiplicação:\n")
        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
        console.log("resposta:\t")
@@ -55,7 +59,9 @@ function iniciar () {
 
     }
 
+    
     if (opcao == 4) {
+
        console.log("\nDivisão:\n")
        console.log("\nDigite\to\tprimeiro\tfator:\t\n")
        console.log("resposta:\t")
@@ -65,7 +71,8 @@ function iniciar () {
        fator2 = parseFloat(prompt())
        result = fator1 / fator2
        console.log("\nO\tresultado\té:\t", result, "\n")
-      }
+     
+    }
 
 
 }
